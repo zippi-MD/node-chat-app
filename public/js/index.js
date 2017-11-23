@@ -3,10 +3,6 @@ const socket = io();
 socket.on('connect', function() {
     console.log('Connected to server');
 
-    socket.emit('createMessage', {
-        from: 'Zippi',
-        text: 'Kiubas, como estas'
-    })
 });
 
 socket.on('disconnect', function() {
